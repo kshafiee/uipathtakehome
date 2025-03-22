@@ -1,0 +1,13 @@
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore Terraform working directory
+.terraform/
+
+# Ignore sensitive files (e.g., backups)
+*.backup
+
+# Ignore CLI plan output files
+*.tfplan
+
