@@ -2,9 +2,9 @@
 
 **Objective**
 
-Q. Develop a solution to manage a cloud infrastructure operation for a company, such as _provisioning, updating, inventory management and de-provisioning resources_, in AWS with best practices in coding, testing, and scalability. Include EC2 instances and EKS cluster resources in your solution.
+Q. Develop a solution to manage a cloud infrastructure operation for a company, such as _provisioning, updating, inventory management and de-provisioning resources_, in AWS with best practices in coding, testing, and scalability. Include EC2 instance and EKS cluster resources in your solution.
 
-A. I used Terraform (Infra-as-Code) for Infrastructure resource provisioning and management across different environments. For the intention of a modular design I used a stand-alone Terraform Module to create every type of resource.  
+A. I used Terraform (Infra-as-Code) for Infrastructure resource provisioning and management across different environments. For the intention of a modular design I used a stand-alone Terraform Module for every type of Infrastructure resource.  
     <br/>The structure of the project looks like this:  
     <br/>├── modules/  
     │ ├── ec2/  
