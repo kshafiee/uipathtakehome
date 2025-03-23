@@ -3,6 +3,11 @@ variable "cluster_name" {
   type        = string
 }
 
+variable "vpc_id" {
+  description = "The ID of the VPC to associate with the EKS cluster"
+  type        = string
+}
+
 variable "subnet_ids" {
   description = "A list of subnet IDs to be used for the EKS cluster"
   type        = list(string)
@@ -20,6 +25,11 @@ variable "node_group" {
 
 variable "role_arn" {
   description = "The ARN of the IAM role to use for the EKS cluster"
+  type        = string
+}
+
+variable "node_role_arn" {
+  description = "The IAM role ARN for the EKS node group"
   type        = string
 }
 
