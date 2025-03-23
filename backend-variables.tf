@@ -1,6 +1,6 @@
 variable "s3_bucket_name" {
   description = "Name of the S3 bucket for storing Terraform state"
-  default     = "my-terraform-state-bucket"
+  default     = "uipathtakehome-state-bucket"
 }
 
 variable "dynamodb_table_name" {
