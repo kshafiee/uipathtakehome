@@ -6,7 +6,6 @@ module "ec2" {
   ami_id          = var.ami_id
 }
 
-/*
 module "iam" {
   source = "./modules/iam"
 
@@ -29,6 +28,4 @@ module "eks" {
   vpc_id      = module.vpc.vpc_id
   subnet_ids  = module.vpc.private_subnet_ids
 }
-*/
-
 
