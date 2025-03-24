@@ -25,7 +25,7 @@ With this setup, Terraform commands are triggered automatically upon a code push
 
 Q. How to upgrade the Kubernetes cluster version from one version to another?
 
-A. My preference is to upgrade the EKS cluster using AWS CLI and NOT Terraform:  
+A. My preference is to upgrade the EKS cluster using AWS CLI and NOT Terraform primarily for the purpose preenting any accidental deletion and re-creation of the entire cluster and its dependent resources:  
     aws eks update-cluster-version --name &lt;cluster-name&gt; --kubernetes-version 1.24 --region &lt;region&gt;
 
 In addition to the control plan upgrade, the EKS worker nodes and core components (add-ons) also need to be upgraded. As the last step the tooling, i.e., kubectl version, also need to be updated.
